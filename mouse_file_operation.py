@@ -26,5 +26,5 @@ def click_single(shubiao_x, shubiao_y, my_class):
 def delete_img(path):
     image_list = os.listdir(path)
 
-    if len(image_list) > 10:
+    if len(image_list) > 30:
         os.remove('%s/%s' % (path, image_list[0]))

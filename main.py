@@ -26,15 +26,16 @@ want_hwnd2 = hwnds[1]
 biaoshi = 0
 tz_zuobiao = 0.75
 jx_zuobiao = 2
+sl_zuobiao = 0.8
 
 while True:
     time.sleep(0.5)
 
     # input_image = opencv.print_app_screen('C:/Windows/system32/cmd.exe')
     input_image1 = opencv.print_app_screen(want_hwnd1)
-    mouse_file_operation.delete_img(path)  # 删除images文件夹多余图像（每次删除文件夹第一张）
+
     input_image2 = opencv.print_app_screen(want_hwnd2)
-    mouse_file_operation.delete_img(path)  # 删除images文件夹多余图像（每次删除文件夹第一张）
+
     try:
         img1 = "./images/%s" % input_image1[0]
         x_hwnd_1, y_hwnd_1 = input_image1[1]  # 程序相对于整个屏幕的右下角坐标
@@ -57,7 +58,8 @@ while True:
     if type(r_image1) == tuple:
         print('img 1', r_image1[2])
         if 'tz' in r_image1[2].keys():
-            if float(r_image1[2]['tz']) > 0.92:
+            if float(r_image1[2]['tz']) > 0.95:
+                time.sleep(1.5)
                 shubiao_x_1 = x_hwnd_1 - r_image1[1][0] * tz_zuobiao
                 shubiao_y_1 = y_hwnd_1 - r_image1[1][1] * tz_zuobiao
                 time.sleep(0.3)
@@ -70,10 +72,15 @@ while True:
             shubiao_x_1 = x_hwnd_1 - r_image1[1][0] * jx_zuobiao
             shubiao_y_1 = y_hwnd_1 - r_image1[1][1] * jx_zuobiao
             mouse_file_operation.click_single(shubiao_x_1, shubiao_y_1, 'jx')
+        elif 'sl' in r_image1[2].keys():
+            shubiao_x_1 = x_hwnd_1 - r_image1[1][0] * sl_zuobiao
+            shubiao_y_1 = y_hwnd_1 - r_image1[1][1] * sl_zuobiao
+            mouse_file_operation.click_single(shubiao_x_1, shubiao_y_1, 'sl')
     if type(r_image2) == tuple:
         print('img 2', r_image2[2])
         if 'tz' in r_image2[2].keys():
-            if float(r_image2[2]['tz']) > 0.92:
+            if float(r_image2[2]['tz']) > 0.95:
+                time.sleep(1.5)
                 shubiao_x_2 = x_hwnd_2 - r_image2[1][0] * tz_zuobiao
                 shubiao_y_2 = y_hwnd_2 - r_image2[1][1] * tz_zuobiao
                 time.sleep(0.3)
@@ -86,3 +93,9 @@ while True:
             shubiao_x_2 = x_hwnd_2 - r_image2[1][0] * jx_zuobiao
             shubiao_y_2 = y_hwnd_2 - r_image2[1][1] * jx_zuobiao
             mouse_file_operation.click_single(shubiao_x_2, shubiao_y_2, 'jx')
+        elif 'sl' in r_image2[2].keys():
+            shubiao_x_2 = x_hwnd_2 - r_image2[1][0] * sl_zuobiao
+            shubiao_y_2 = y_hwnd_2 - r_image2[1][1] * sl_zuobiao
+            mouse_file_operation.click_single(shubiao_x_2, shubiao_y_2, 'sl')
+    mouse_file_operation.delete_img(path)  # 删除images文件夹多余图像（每次删除文件夹第一张）
+    mouse_file_operation.delete_img(path)  # 删除images文件夹多余图像（每次删除文件夹第一张）

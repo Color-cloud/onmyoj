@@ -78,7 +78,7 @@ def print_app_screen(hwnd_number):
         img_index = re.search('-', hwnd_title[hwnd_number][::-1]).span()[0]
         img_name = hwnd_title[hwnd_number][int(-img_index):]
         timestring1 = str(time.time())
-        timestring = timestring1[3:10] + timestring1[11:13]
+        timestring = timestring1[2:10] + timestring1[11:13]
         for i in img_name:
             if i in no_name:
                 img_name = img_name.replace(i, '')

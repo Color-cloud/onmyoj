@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c56f4fb1-7a62-4c5c-91a9-0976e4ddd09d" name="Default Changelist" comment="qwe" />
+    <list default="true" id="c56f4fb1-7a62-4c5c-91a9-0976e4ddd09d" name="Default Changelist" comment="qwe">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mouse_file_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mouse_file_operation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv.py" beforeDir="false" afterPath="$PROJECT_DIR$/opencv.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -123,7 +128,10 @@
       <workItem from="1617711093643" duration="4024000" />
       <workItem from="1617770440039" duration="397000" />
       <workItem from="1617771661728" duration="439000" />
-      <workItem from="1617795126783" duration="7604000" />
+      <workItem from="1617795126783" duration="7954000" />
+      <workItem from="1617810250617" duration="176000" />
+      <workItem from="1617942510416" duration="764000" />
+      <workItem from="1617943627791" duration="4900000" />
     </task>
     <task id="LOCAL-00001" summary="remove some print">
       <created>1617609212467</created>
@@ -179,7 +187,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/yys$predict.coverage" NAME="predict Coverage Results" MODIFIED="1617549182556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yys$main.coverage" NAME="main Coverage Results" MODIFIED="1617807734594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yys$main.coverage" NAME="main Coverage Results" MODIFIED="1617965557187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yys$opencv.coverage" NAME="opencv Coverage Results" MODIFIED="1617770463313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
