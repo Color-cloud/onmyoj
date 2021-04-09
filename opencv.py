@@ -2,18 +2,20 @@ import time
 from ctypes import windll
 from fnmatch import fnmatch
 
-import win32api
+# import win32api
 import numpy as np
-import win32con
+# import win32con
 import cv2
-import win32gui
-from PyQt5.QtWidgets import QHBoxLayout, QMainWindow, QApplication, QPushButton, QWidget
-from PyQt5.QtGui import *
+# import win32gui
+# from PyQt5.QtWidgets import QHBoxLayout, QMainWindow, QApplication, QPushButton, QWidget
+from PyQt5.QtWidgets import QApplication
+# from PyQt5.QtGui import *
 import win32gui
 import sys
 import re
-import math
-import pytesseract
+
+# import math
+# import pytesseract
 
 # 获取当前屏幕的尺寸 即分辨率
 width = windll.user32.GetSystemMetrics(0)

@@ -1,9 +1,9 @@
 import win32api
-import numpy as np
+# import numpy as np
 import win32con
 from ctypes import windll
 import time
-import win32gui
+# import win32gui
 import os
 
 last_class = ''

@@ -1,17 +1,20 @@
 # -------------------------------------#
 #       创建YOLO类
 # -------------------------------------#
-import cv2
+# import cv2
 import numpy as np
 import colorsys
 import os
 import torch
 import torch.nn as nn
 from nets.yolo4 import YoloBody
-import torch.backends.cudnn as cudnn
+# import torch.backends.cudnn as cudnn
 from PIL import Image, ImageFont, ImageDraw
-from torch.autograd import Variable
-from utils.utils import non_max_suppression, bbox_iou, DecodeBox, letterbox_image, yolo_correct_boxes
+# from torch.autograd import Variable
+from utils.utils import non_max_suppression, DecodeBox, letterbox_image, yolo_correct_boxes
+
+
+# from utils.utils import non_max_suppression, bbox_iou, DecodeBox, letterbox_image, yolo_correct_boxes
 
 
 # --------------------------------------------#
@@ -168,7 +171,7 @@ class YOLO(object):
             draw = ImageDraw.Draw(image)
             label_size = draw.textsize(label, font)
             label = label.encode('utf-8')
-            class_score = {predicted_class:'%.2f'%score}
+            class_score = {predicted_class: '%.2f' % score}
             # print(label)
 
             if top - label_size[1] >= 0:
